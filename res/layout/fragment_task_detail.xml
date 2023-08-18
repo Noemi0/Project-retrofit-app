@@ -1,0 +1,166 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context="com.zoltanlorinczi.project_retrofit.fragment.TasksListFragment"
+                                                   android:id="@+id/taskNameTask"
+                                                   android:background="@drawable/description_background">
+    <TextView
+            android:text="3:45 May 21 2021"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" android:id="@+id/assignedDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.376"/>
+    <TextView
+            android:text="Assigned date:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TaskDescriptionDetail"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="18dp" app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.377"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="340dp"
+            android:layout_height="17dp"
+            android:id="@+id/progressBar"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.436" android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.509"/>
+    <TextView
+            android:text="2023-02-15"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" android:id="@+id/deadline_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.418" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.534"/>
+    <TextView
+            android:text="0% Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.89" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.484"/>
+    <TextView
+            android:text="Priority: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/priority"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.086" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.575"/>
+    <TextView
+            android:text="James Doe"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" android:id="@+id/assigneeText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.436" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.425"/>
+    <TextView
+            android:text="High"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/priotityText"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.348" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.575"/>
+    <TextView
+            android:text="Janette Doe"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" android:id="@+id/assignedByName1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.404" android:textColor="#000000"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.321"/>
+    <TextView
+            android:text="Deadline: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/deadline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.535"/>
+    <TextView
+            android:text="Dev project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/projectType"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.885"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.401"/>
+    <TextView
+            android:text="Assigned by:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/taskDescriptionDetail2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.078" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.316"/>
+    <TextView
+            android:text="Assignee:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/taskDescriptionDetail3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.074" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.425"/>
+    <TextView
+            android:text="Set-Up company profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/detailTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.095" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.251" android:textSize="16sp"/>
+    <TextView
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskStatusView2"
+            android:textStyle="bold"
+            android:background="#507FEF"
+            android:textColor="#FEFEFE"
+            android:textSize="16sp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.293"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.871" android:backgroundTint="#507EEE"/>
+    <TextView
+            android:text="Task Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/task_title"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.122" android:textSize="30sp" android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.05"/>
+    <ImageView
+            android:src="@drawable/detaill"
+            android:layout_width="120dp"
+            android:layout_height="190dp" android:id="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.986"/>
+    <TextView
+            android:text="Lorem ipsum dolor sit amet, constecteur adipi.Lorem ipsum dolor sit amet, constecteur adipi.Lorem ipsum dolor sit amet, constecteur adipiLorem ipsum dolor sit amet, constecteur adipi."
+            android:layout_width="251dp"
+            android:layout_height="143dp" android:id="@+id/descriptionEditText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.871"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:textAlignment="center" app:layout_constraintHorizontal_bias="0.5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

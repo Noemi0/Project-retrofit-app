@@ -1,0 +1,30 @@
+How many time zones are there in Russia?
+11/1
+10/0
+9/0
+12/0
+What is the national flower of Japan?
+Cherry blossom/1
+Rose/0
+Lily/0
+Tulip/0
+How many stripes are there on the US flag?
+10/0
+7/0
+13/1
+15/0
+What is the national animal of Australia?
+Red Kangaroo/1
+Shark/0
+Crocodile/0
+Koala/0
+How many days does it take for the Earth to orbit the Sun? 
+365/1
+366/0
+350/0
+12/0
+Until 1923, what was the Turkish city of Istanbul called? 
+Constantinople/1
+Antalya/0
+Ankara/0
+Izmir/0

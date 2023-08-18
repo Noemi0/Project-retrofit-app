@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="250dp" android:alwaysDrawnWithCache="false" android:layout_marginBottom="30sp"
+        android:backgroundTint="#A6B6DA" android:background="#A6B6DA">
+
+    <TextView
+            android:text="Deadline:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.046" app:layout_constraintVertical_bias="0.657"/>
+    <TextView
+            android:id="@+id/task_deadline_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023-02-15"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.657" app:layout_constraintHorizontal_bias="0.332"/>
+    <TextView
+            android:id="@+id/task_assignee_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="James Doe"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.425" app:layout_constraintHorizontal_bias="0.362"/>
+    <TextView
+            android:id="@+id/taskTitleView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintVertical_bias="0.242"/>
+    <TextView
+            android:id="@+id/task_description_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task description"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.807" app:layout_constraintHorizontal_bias="0.054"/>
+    <TextView
+            android:id="@+id/task_priority_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task prioririty"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.662"/>
+    <View
+            android:id="@+id/divider"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="136dp" android:layout_marginStart="1dp"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="Assignee:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/task_title"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.046" app:layout_constraintVertical_bias="0.425"/>
+    <TextView
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_status_view"
+            android:textStyle="bold"
+            android:background="#507FEF"
+            android:textColor="#FEFEFE"
+            android:textSize="16sp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.425"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.884" android:backgroundTint="#507EEE"/>
+    <TextView
+            android:text="hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/task_hour_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintVertical_bias="0.112"/>
+
+
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

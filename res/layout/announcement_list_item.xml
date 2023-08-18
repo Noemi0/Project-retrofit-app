@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:alwaysDrawnWithCache="false"
+        android:layout_marginBottom="30sp"
+        android:layout_margin="15dp"
+        android:translationZ="4dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="#DFE7F6" android:background="#A6B6DA">
+
+
+    <ImageView
+            android:src="@drawable/announcement"
+            android:layout_width="88dp"
+            android:layout_height="134dp" android:id="@+id/imageView8"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.945" android:layout_marginTop="-20dp"/>
+    <TextView
+            android:id="@+id/anouncementName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anouncement"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintVertical_bias="0.506"/>
+    <ImageView
+            android:layout_width="33dp"
+            android:layout_height="37dp" app:srcCompat="@drawable/baseline_warning_24"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157" app:layout_constraintVertical_bias="0.507"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

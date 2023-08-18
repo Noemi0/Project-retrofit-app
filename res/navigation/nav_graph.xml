@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_graph"
+            app:startDestination="@id/splashScreen">
+
+  <fragment
+    android:id="@+id/loginFragment"
+    android:name="com.zoltanlorinczi.project_retrofit.fragment.LoginFragment"
+    android:label="LoginFragment"
+    tools:layout="@layout/fragment_login">
+
+    <action
+      android:id="@+id/action_loginFragment_to_listFragment"
+      app:destination="@id/listFragment"/>
+  </fragment>
+
+  <fragment
+    android:id="@+id/listFragment"
+    android:name="com.zoltanlorinczi.project_retrofit.fragment.TasksListFragment"
+    android:label="ListFragment"
+    tools:layout="@layout/fragment_tasks_list">
+    <action android:id="@+id/action_listFragment_to_profileFragment" app:destination="@id/profileFragment"/>
+    <action android:id="@+id/action_listFragment_to_taskDetailFragment" app:destination="@id/taskDetailFragment"/>
+    <action android:id="@+id/action_listFragment_to_groupListFragment" app:destination="@id/groupListFragment"/>
+    <action android:id="@+id/action_listFragment_to_settingsFragment" app:destination="@id/settingsFragment"/>
+    <action android:id="@+id/action_listFragment_to_createTaskFragment" app:destination="@id/createTaskFragment"/>
+    <action android:id="@+id/action_listFragment_to_activityFragment" app:destination="@id/activityFragment"/>
+  </fragment>
+  <fragment android:id="@+id/profileFragment"
+            android:name="com.zoltanlorinczi.project_retrofit.fragment.ProfileFragment"
+            android:label="ProfileFragment">
+    <action android:id="@+id/action_profileFragment_to_profileUpdateFragment2"
+            app:destination="@id/profileUpdateFragment"/>
+  </fragment>
+  <fragment android:id="@+id/splashScreen" android:name="com.zoltanlorinczi.project_retrofit.fragment.SplashScreen"
+            android:label="SplashScreen">
+    <action android:id="@+id/action_splashScreen_to_loginFragment" app:destination="@id/loginFragment"/>
+    <action android:id="@+id/action_splashScreen_to_listFragment" app:destination="@id/listFragment"/>
+  </fragment>
+  <fragment android:id="@+id/taskDetailFragment"
+            android:name="com.zoltanlorinczi.project_retrofit.fragment.TaskDetailFragment"
+            android:label="TaskDetailFragment"/>
+  <fragment android:id="@+id/profileUpdateFragment"
+            android:name="com.zoltanlorinczi.project_retrofit.fragment.ProfileUpdateFragment"
+            android:label="ProfileUpdateFragment">
+    <action android:id="@+id/action_profileUpdateFragment_to_profileFragment" app:destination="@id/profileFragment"/>
+  </fragment>
+  <fragment android:id="@+id/groupListFragment"
+            android:name="com.zoltanlorinczi.project_retrofit.fragment.GroupListFragment"
+            android:label="GroupListFragment">
+    <action android:id="@+id/action_groupListFragment_to_groupFragment" app:destination="@id/groupFragment"/>
+  </fragment>
+  <fragment android:id="@+id/groupFragment" android:name="com.zoltanlorinczi.project_retrofit.fragment.GroupFragment"
+            android:label="GroupFragment"/>
+  <fragment android:id="@+id/settingsFragment"
+            android:name="com.zoltanlorinczi.project_retrofit.fragment.SettingsFragment"
+            android:label="SettingsFragment">
+    <action android:id="@+id/action_settingsFragment_to_profileFragment" app:destination="@id/profileFragment"/>
+  </fragment>
+  <fragment android:id="@+id/createTaskFragment"
+            android:name="com.zoltanlorinczi.project_retrofit.fragment.CreateTaskFragment"
+            android:label="CreateTaskFragment">
+    <action android:id="@+id/action_createTaskFragment_to_listFragment" app:destination="@id/listFragment"/>
+  </fragment>
+  <fragment android:id="@+id/activityFragment"
+            android:name="com.zoltanlorinczi.project_retrofit.fragment.ActivityFragment"
+            android:label="ActivityFragment"/>
+</navigation>

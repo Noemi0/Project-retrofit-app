@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:alwaysDrawnWithCache="false"
+        android:layout_marginBottom="30sp"
+        android:layout_margin="15dp"
+        android:translationZ="4dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="0dp"
+        android:backgroundTint="#A6B6DA" android:background="#A6B6DA">
+
+
+    <TextView
+            android:id="@+id/taskAssignee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olosz Noemi"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833" app:layout_constraintHorizontal_bias="0.233"/>
+    <TextView
+            android:text="Assignee:"
+            android:layout_width="55dp"
+            android:layout_height="19dp" android:id="@+id/task_title5"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.009" app:layout_constraintVertical_bias="0.882"/>
+    <ImageView
+            android:src="@drawable/taskok"
+            android:layout_width="71dp"
+            android:layout_height="99dp" android:id="@+id/imageView9"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="-15dp" app:layout_constraintHorizontal_bias="0.948"/>
+    <TextView
+            android:text="3:45 May 21 2021"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="#4C5464"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.011" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.111" android:id="@+id/createdDate"/>
+    <TextView
+            android:id="@+id/activitytaskName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintVertical_bias="0.506"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
